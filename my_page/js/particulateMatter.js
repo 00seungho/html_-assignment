@@ -36,7 +36,6 @@ $(document).ready(function () {
     onGeoError();
     //현재위치를 얻어오는 함수
     navigator.geolocation.getCurrentPosition(onGeoOkay, onGeoError, options);
-
     function onGeoOkay(position) {
         fetch(`https://hifive.metainsu.co.kr/api/v1/common/gainlocation?lat=${position.coords.longitude}&lon=${position.coords.latitude}`)
             .then(response => response.json())
@@ -166,6 +165,7 @@ $(document).ready(function () {
     }
 
 });
+
 
 
 function particulateMatterLoad(){

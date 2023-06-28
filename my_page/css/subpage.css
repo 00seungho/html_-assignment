@@ -1,9 +1,30 @@
-    /*구획 설정*/
-body{
-margin: 0;
-padding: 0;
+      /*구획 설정*/
+      #backgroundGray{
+    display: none;
+        height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.3;
+    z-index: 30;
+    position: fixed;
 }
-    #abody{
+#movieinfo{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+      body{
+        margin: 0;
+        padding: 0;
+        }
+      #abody{
         width: 1100px; 
         margin: 5px;
         margin-left: 10%;
@@ -16,7 +37,10 @@ padding: 0;
         overflow: hidden;
         
     }
-
+    .box{
+        margin-top: 5px;
+        box-shadow: 1px 2px 2px black;
+    }
     #left{
         margin-left: 5%;
         width: 95%;
@@ -50,25 +74,19 @@ padding: 0;
 
    /*footer내용*/
    
-   /*footer내용*/
+   /*footer내용*/   
    /*본문 내용*/
         /*본문 right 내용*/
 
         /*본문 right 내용*/
-        
         /*본문 left 내용*/
         .main_Container{
-            width: 97%;
-            margin-left: 3%;
-            height: 25%;
-
+            margin: 0;
+            padding: 0;
            }
         .main_Contauner_p
         {
-            margin-left: 30%;
-            
-            width: 560px;
-            height: 100%;
+            width: 99%;
             text-decoration: none;
         }
         .main_Container_img{
@@ -84,7 +102,7 @@ padding: 0;
             width: 100%;
             font-weight: bold;
             color: black;
-            margin-left: 30%;
+            margin-left: 37%;
         }
         .neyoung{
             text-decoration: none;
@@ -146,6 +164,7 @@ padding: 0;
     }
     
     /*네비게이션 바*/
+
     #topbutton{
         position: relative;
         width: 72Px;

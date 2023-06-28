@@ -120,8 +120,8 @@ padding: 0;
         list-style: none;
     }
     .nav_menu li {
-        margin-left: 10%;
-    background-color: white;
+        margin-left: 10px;
+        background-color: white;
     }
     .nav_menu li:hover {
         color: black;
