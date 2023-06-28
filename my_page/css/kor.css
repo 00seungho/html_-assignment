@@ -1,0 +1,161 @@
+
+    /*구획 설정*/
+body{
+margin: 0;
+padding: 0;
+}
+    #abody{
+        width: 1100px; 
+        margin: 5px;
+        margin-left: 10%;
+        height: auto;
+        left: 50%;
+        margin-left: -600px;
+        position: absolute;
+           }
+    #middle{
+        overflow: hidden;
+        
+    }
+
+    #left{
+        margin-left: 5%;
+        width: 95%;
+        height: auto;
+        float: left;    
+}
+    #bottom{
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 5%;
+        height: 50px;
+        margin-bottom: 3%;
+        float: left;
+    }
+    #top{
+        margin-left: 5%;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 100px;
+        background-image: size;
+        
+    }
+ /*구획 설정*/
+    /*top 내용*/
+    #top img{
+        margin-top: 3%;
+        margin-left:20%;
+        margin-bottom: 2%;
+    }
+            /*top 내용*/
+
+   /*footer내용*/
+   
+   /*footer내용*/
+   /*본문 내용*/
+        /*본문 right 내용*/
+
+        /*본문 right 내용*/
+        
+        /*본문 left 내용*/
+        .main_Container{
+            width: 97%;
+            margin-left: 3%;
+            height: 25%;
+
+           }
+        .main_Contauner
+        {
+            margin-left: 30%;
+            width: 560px;
+            height: 100%;
+            text-decoration: none;
+        }
+        .main_Container_img{
+            display: inline-block;
+            width: 30%;
+            height: 100%;
+        }
+        .main_Container_img img{
+            margin-top: 6%;
+        }
+        .head_line{
+            font-size: 20px;
+            width: 100%;
+            font-weight: bold;
+            color: black;
+            margin-left: 45%;
+        }
+        .neyoung{
+            text-decoration: none;
+            color: black;
+        }
+        .margin_p
+        {
+            width: 100%;
+           height: 13%;
+        }
+        .bottom_img{
+            margin-left: 1%;
+        }
+        /*본문 left 내용*/
+
+     /*본문 내용*/
+    /*네비게이션 바*/
+    #nav{   
+        margin-left: 5%;
+        width: 100%;
+        margin-bottom: 5%;
+        height: 52px;
+    }
+    .nav_logo {
+        font-size: 24px;
+        color: var(--text-color);
+    }
+        .nav_logo li {
+        color: var(--accent-color);
+    }
+    .nav_menu {
+        display: flex;
+        list-style: none;
+    }
+    .nav_menu li {
+        margin-left: 10%;
+    background-color: white;
+    }
+    .nav_menu li:hover {
+        color: black;
+        background-color: rgba(155, 153, 153, 0.355);
+        border-radius: 4px;
+    }
+    .nav_menu li a:hover {
+        color: var(--background-color);
+    }
+    .nav_menu >li >a{
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .nav_front{
+        margin-left: 5%;
+    }
+    .navbar{
+        width: 100%;
+        height: 52px;
+    }
+    
+    /*네비게이션 바*/
+    #topbutton{
+        position: relative;
+        width: 72Px;
+        height: 70px;
+        left: 35px;
+        top : 20px;
+    }
+    #rightbut{
+        position: fixed;
+        width: 141.6px;
+        right: 70px;
+        bottom :30px;
+    }

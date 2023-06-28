@@ -3,158 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Story</title>
-    <style>
-        /*구획 설정*/
-        body{
-            width: 1100px; 
-            margin: 5px;
-            margin-left: 10%;
-            height: auto;
-            left: 50%;
-            margin-left: -600px;
-            position: absolute;
-               }
-        #middle{
-            overflow: hidden;
-            
-        }
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>Movie Story</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.0.js"></script>  
+    <script src="js/topbutton.js"></script>
+    <script src="js/particulateMatter.js"></script>
+    <script src="js/boxofiice.js"></script>
 
-        #left{
-            margin-left: 5%;
-            width: 95%;
-            height: auto;
-            float: left;
-    }
-        #bottom{
-            margin-top: 20px;
-            width: 100%;
-            margin-left: 5%;
-            height: 50px;
-            margin-bottom: 3%;
-            float: left;
-        }
-        #top{
-            margin-left: 5%;
-            margin-bottom: 50px;
-            width: 100%;
-            height: 100px;
-            background-image: size;
-            
-        }
-     /*구획 설정*/
-        /*top 내용*/
-        #top img{
-            margin-top: 3%;
-            margin-left:20%;
-            margin-bottom: 2%;
-        }
-                /*top 내용*/
-
-       /*footer내용*/
-       
-       /*footer내용*/
-       /*본문 내용*/
-            /*본문 right 내용*/
-
-            /*본문 right 내용*/
-            
-            /*본문 left 내용*/
-            .main_Container{
-                width: 97%;
-                margin-left: 3%;
-                height: 25%;
-               }
-            .main_Contauner_p
-            {
-                float: right;
-                width: 66%;
-                margin-left: 4%;
-                height: 100%;
-                text-decoration: none;
-            }
-            .main_Container_img{
-                display: inline-block;
-                width: 30%;
-                height: 100%;
-            }
-            .main_Container_img img{
-                margin-top: 6%;
-            }
-            .head_line{
-                font-size: 20px;
-                font-weight: bold;
-                color: black;
-            }
-            .neyoung{
-                text-decoration: none;
-                color: black;
-            }
-            .margin_p
-            {
-                width: 100%;
-               height: 13%;
-            }
-            .bottom_img{
-                margin-left: 1%;
-            }
-            /*본문 left 내용*/
-
-         /*본문 내용*/
-        /*네비게이션 바*/
-        #nav{   
-            margin-left: 5%;
-            width: 100%;
-            margin-bottom: 5%;
-        }
-        .nav_logo {
-            font-size: 24px;
-            color: var(--text-color);
-            width: 100%;
-            height: 50px;
-        }
-            .nav_logo li {
-            color: var(--accent-color);
-        }
-        .nav_menu {
-            display: flex;
-            list-style: none;
-        }
-        .nav_menu li {
-            margin-left: 10%;
-        background-color: white;
-        }
-        .nav_menu li:hover {
-            color: black;
-            background-color: rgba(155, 153, 153, 0.355);
-            border-radius: 4px;
-        }
-        .nav_menu li a:hover {
-            color: var(--background-color);
-        }
-        .nav_menu >li >a{
-            display: inline-block;
-            padding: 10px 10px 10px 10px;
-            text-decoration: none;
-            color: black;
-        }
-        .nav_front{
-            margin-bottom: -1px;
-            margin-left: 5%;
-        }
-        
-        /*네비게이션 바*/
-
-    </style>
 </head>
 <body>
+    <div id="backgroundGray"></div>
+    <div id="abody">
     <header>
     <div id="top">   
             <a href=""><img src="imgs/title1.png"></a>
-            <hr>
             </div>
-        <br>
         <div id="nav">
             <nav class="navbar">
                 <div class="nav_logo">
@@ -165,12 +29,10 @@
                   <li><a href="jp.html">일본영화</a></li>
                 </ul>
               </nav>
-              <hr>
         </div>
     </header>
         <div id="middle">
             <div id="left">
-                <br>
                 <div class="main_Container"><a href="https://www.donga.com/news/Culture/article/all/20230414/118831270/1">
                     <div class="main_Container_img">
                     <img src="imgs/john_Edited.jpeg" alt="" width="300px" height="height: 287px">
@@ -187,7 +49,6 @@
                 </a>
                
                 </div>
-                <br><br><br>
                 <div class="main_Container"><div class="main_Container_img"><a href="http://osen.mt.co.kr/article/G1112082818"><img src="imgs/door_photo_Edited.jpeg" alt="" width="300px" height="height: 287px">
                 </div>
                     <div class="main_Contauner_p">  
@@ -203,7 +64,6 @@
                     
                 </a>
                 </div>
-                <br><br><br>
                 <div class="main_Container">
                     <a href="https://www.yna.co.kr/view/AKR20230412177200005?input=1195m">
                         <div class="main_Container_img">
@@ -221,18 +81,45 @@
                         </div>
                     </a>    
                 </div>
-                <br>
 
-                <br>
+                
+
+                <div id="boxoffice">
+                    <h1>일간 영화 박스오피스 순위</h1>
+                    <h2 id="time" style="font-size: 15px; font-weight: 100;"></h2>
+                    <h2 id="1th"></h1>
+                    <h2 id="2th"></h2>
+                    <h2 id="3th"></h2>
+                    <h2 id="4th"></h2>
+                    <h2 id="5th"></h2>
+                    <h2 id="6th"></h2>
+                    <h2 id="7th"></h2>
+                    <h2 id="8th"></h2>
+                    <h2 id="9th"></h2>
+                    <h2 id="10th"></h2>
+                    <div id="xbutton"><a href="#" id="x"><h3>[close]</h3></a></div>
+                </div>
+                
         
             </div>
-    <footer>
-        
+            <div id="rightbut">
+            <div id="dust">
+                <img src="imgs/none.png" id="dustState">
+                <h6 id="state"></h6>
+                <h6 id="mylocation"></h6>
+                <h6 id="smalldust"></h6>
+                <h6 id="verysmalldust"></h6>
+            </div> 
+            <div id = "topbutton"><a href="#"><img src="imgs/TopButton.png" width="72px" height="70px"></a></div>
+            </div>
+            <footer>
+                
     <div id="bottom">
     <hr>
     <div class="bottom_img"><a href="https://www.instagram.com/"><img src="imgs/Group4.png" alt=""></a></div>
        
     </footer> 
     </div>
+</div>
 </body>
 </html>
